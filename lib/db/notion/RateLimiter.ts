@@ -16,7 +16,7 @@ export class RateLimiter {
   private windowStart = Date.now()
 
   constructor(
-    private maxRequestsPerMinute = 200,
+    private maxRequestsPerMinute = 50,
     private lockFilePath?: string
   ) { }
 
